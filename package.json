@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:html",
+    "test": "npm run test:html && npm run test:jshint",
     "test:html": "glob-run nu-html-checker *.html",
     "test:jshint":"glob-run jshint js/*.js",
 
