@@ -6,6 +6,8 @@
   "scripts": {
     "test": "npm run test:html",
     "test:html": "glob-run nu-html-checker *.html",
+    "test:jshint":"glob-run jshint js/*.js",
+
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "sass --sourcemap=none --update sass:css",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
